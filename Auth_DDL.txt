@@ -1,0 +1,21 @@
+CREATE TABLE PRINCIPLES ( principal_id VARCHAR(64) primary key,password VARCHAR(64));
+CREATE TABLE ROLES ( principal_id VARCHAR(64),user_role VARCHAR(64),role_group VARCHAR(64));
+
+Insert into PRINCIPLES values('user1','Passw0rd1');
+Insert into PRINCIPLES values('user2','Passw0rd2');
+Insert into PRINCIPLES values('user3','Passw0rd3');
+Insert into PRINCIPLES values('user4','Passw0rd4');
+
+Insert into ROLES values('user1','registereduser','registereduser');
+Insert into ROLES values('user1','inviteduser','inviteduser');
+Insert into ROLES values('user1','admin','admin');
+Insert into ROLES values('user1','manager','manager');
+
+Insert into ROLES values('user2','inviteduser','inviteduser');
+Insert into ROLES values('user2','admin','admin');
+Insert into ROLES values('user2','manager','manager');
+
+Insert into ROLES values('user3','admin','admin');
+Insert into ROLES values('user3','manager','manager');
+
+Insert into ROLES values('user4','manager','manager');
